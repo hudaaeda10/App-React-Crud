@@ -22,10 +22,10 @@ export default class App extends Component {
         nohp: "0212345213"
       },
       {
-        id: 1,
-        nama: 'Kana Hanazawa',
-        alamat: 'Garut',
-        umur: 23,
+        id: 3,
+        nama: 'Aelita Stone',
+        alamat: 'Perancis',
+        umur: 20,
         nohp: "02182927287"
       }
     ]
