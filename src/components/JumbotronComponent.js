@@ -2,7 +2,12 @@ import React from 'react';
 import { Jumbotron, Button, Container } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInfo } from '@fortawesome/free-solid-svg-icons'
-
+import { connect } from "react-redux";
+const mapStateToProps = (state) => {
+    return {
+        title: state.users.title
+    }
+}
 const element = <FontAwesomeIcon icon={faInfo} />
 
 
@@ -24,4 +29,4 @@ return (
     );
 };
 
-export default JumbotronComponent;
+export default connect(mapStateToProps)(JumbotronComponent);

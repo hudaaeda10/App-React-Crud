@@ -11,40 +11,14 @@ import EditUserContainer from './containers/EditUserContainer';
 import DetailUserContainer from './containers/DetailUserContainer';
 
 export default class App extends Component {
-  state = {
-    title: 'Code Lyoko Academy',
-    users: [
-      {
-        id: 1,
-        nama: 'Kana Hanazawa',
-        alamat: 'Garut',
-        umur: 23,
-        nohp: "02123452221"
-      },
-      {
-        id: 2,
-        nama: 'Horimiya',
-        alamat: 'Jepara',
-        umur: 21,
-        nohp: "0212345213"
-      },
-      {
-        id: 3,
-        nama: 'Aelita Stone',
-        alamat: 'Perancis',
-        umur: 20,
-        nohp: "02182927287"
-      }
-    ]
-  }
   render() {
     return (
       <div>
         <NavbarComponent/>
-        <JumbotronComponent title={this.state.title}/>
+        <JumbotronComponent />
         <BrowserRouter>
           <Route path="/" exact>
-            <HomeContainer  users={this.state.users}/>
+            <HomeContainer  />
           </Route>
           <Route path="/create" exact>
             <CreateUserContainer />
